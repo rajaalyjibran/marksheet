@@ -1,0 +1,47 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    char name[12];
+    int Totalmarks,obtainedmarks,grade,rollnumber,sum,num1,num2,num3;
+    string pass, fail;
+    cout<<"******************RESULT_COMPILER****************\n\n";
+    cout<<"___________________Student's Status_____________:)\n";
+    
+    // Student's personal information;
+    cout<<"Name of student\n";
+    cin>>name;
+    cout<<"Students roll number\n";
+    cin>>rollnumber;
+    cout<<"Student's current grade\n";
+    cin>>grade;
+    
+   cout<<"********MARKS IN ALL SUBJECTS*********\n\n";
+    // Subjectwise Marks
+    cout<<"Marks in English (out of 100) ___";
+    cin>>num1;
+    cout<<"Marks in Urdu (out of 100) ___";
+    cin>>num2;
+    cout<<"Marks in Mathematics (out of 100) ___ ";
+    cin>>num3;
+   sum=num3+num2+num1 ;
+   
+    cout<<"OBTAINED MARKS "<<sum ;
+    
+    //result
+    if(obtainedmarks=sum>=140)
+    {
+      cout<<"\nYou are _____PASS";
+      
+    }
+    
+    else
+    {
+        cout<<"You are______FAIL";
+       
+    }
+    
+    return 0;
+}
